@@ -20,7 +20,7 @@ Preprocessing steps:
 - Remove numbers
 - Replace the over spaces
 
-subrredits:
+subreddits:
  - relationships
  - love
  - family
