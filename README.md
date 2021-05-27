@@ -1,6 +1,6 @@
 ## Scraper Task 1
 -------------------------------
-- Scraper is based on [pushshift](https://github.com/pushshift/api) and [praw](https://praw.readthedocs.io/en/latest/code_overview/models/subreddit.html).
+- Scraper is based on [pushshift](https://github.com/pushshift/api).
 - Pandas, nltk were used to filter the data.
 - As a result, 100174 documents were received.
 
