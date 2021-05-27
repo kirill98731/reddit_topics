@@ -22,7 +22,7 @@ from sklearn import preprocessing
 import gensim
 import gensim.corpora as corpora
 from gensim.models import CoherenceModel
-import spacy
+from Task_3.utils.lemmatization import sent_to_words, lemmatization
 
 
 """Import data"""
@@ -103,9 +103,6 @@ for topic, comp in enumerate(lda.components_):
 Gensim LDA
 Clearing Text
 """
-def sent_to_words(sentences):
-    for sentence in sentences:
-        yield(gensim.utils.simple_preprocess(str(sentence), deacc=True))
 
 data_words = list(sent_to_words(df_oh['cleared_text']))
 
@@ -119,16 +116,6 @@ def make_bigrams(texts):
 
 
 """Lemmatization"""
-nlp = spacy.load('en_core_web_sm', disable=['parser', 'ner'])
-
-
-def lemmatization(texts, allowed_postags=['NOUN', 'ADJ', 'VERB', 'ADV']):
-    texts_out = []
-    for sent in texts:
-        doc = nlp(" ".join(sent))
-        texts_out.append([token.lemma_ for token in doc if token.pos_ in allowed_postags])
-    return texts_out
-
 
 data_words_bigrams = make_bigrams(data_words)
 data_lemmatized = lemmatization(data_words_bigrams)

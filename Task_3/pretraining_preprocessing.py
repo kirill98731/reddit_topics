@@ -44,11 +44,6 @@ df['sin_weekday'] = make_sin_list(df['WEEKDAY'], 7)
 
 df.drop(columns=['HOUR', 'MONTH', 'WEEKDAY'], inplace=True)
 
-"""Compression of a pre-trained model trained on Common Crawl and on Wikipedia using FastText"""
-# big_model = load_facebook_model('cc.en.300.bin').wv
-# small_model = compress_fasttext.prune_ft_freq(big_model, pq=True)
-# small_model.save('compressed.cc.en.300.bin')
-
 """Loading a compressed model"""
 embs = "compressed.cc.en.300.bin"
 embeddings = CompressedFastTextKeyedVectors.load(str(embs))
