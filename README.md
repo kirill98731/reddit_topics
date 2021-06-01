@@ -58,6 +58,12 @@ metric - [adjusted_rand_score](https://scikit-learn.org/stable/modules/generated
  - Kmeans using tfifd ~ 0.66 
  - MiniBatchKMeans using tfifd ~ 0.50
  
+ ## Regression baseline model Task 4
+ metric - [R^2](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html)
+ LinearRegression results ~ 0.53
+ RandomForestRegressor results ~ 0.58
+ GradientBoostingRegressor results ~ 0.51
+ 
  ## Links to sourses
 - [Scrap Reddit using pushshift](https://medium.com/@pasdan/how-to-scrap-reddit-using-pushshift-io-via-python-a3ebcc9b83f4)
 - [Cleaning Text Data](https://towardsdatascience.com/cleaning-text-data-with-python-b69b47b97b76)

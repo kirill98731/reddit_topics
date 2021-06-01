@@ -50,7 +50,7 @@ pipe.score(X_test, y_test)
 pipe = Pipeline(
     [
         ('scaler', StandardScaler()),
-        ('svc', LogisticRegression())
+        ('LogisticRegression', LogisticRegression())
     ]
 )
 pipe.fit(X_train, y_train)
@@ -60,7 +60,7 @@ pipe.score(X_test, y_test)
 pipe = Pipeline(
     [
         ('scaler', StandardScaler()),
-        ('svc', LDA())
+        ('LDA', LDA())
     ]
 )
 pipe.fit(X_train, y_train)
