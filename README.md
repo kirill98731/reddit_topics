@@ -64,6 +64,13 @@ metric - [adjusted_rand_score](https://scikit-learn.org/stable/modules/generated
  RandomForestRegressor results ~ 0.58
  GradientBoostingRegressor results ~ 0.51
  
+ ### Conclusion:
+The baseline solution showed a weak result. To improve the quality of the model, can try the following steps
+- use additional information about the publication, such as the author and his popularity;
+- use TF-IDF as an estimate of the importance of a word in a document;
+- check the document collection for anomalies;
+- selection of hyperparameters for regression models.
+ 
  ## Links to sourses
 - [Scrap Reddit using pushshift](https://medium.com/@pasdan/how-to-scrap-reddit-using-pushshift-io-via-python-a3ebcc9b83f4)
 - [Cleaning Text Data](https://towardsdatascience.com/cleaning-text-data-with-python-b69b47b97b76)
