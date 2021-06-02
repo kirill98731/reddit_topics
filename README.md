@@ -60,9 +60,9 @@ metric - [adjusted_rand_score](https://scikit-learn.org/stable/modules/generated
  
  ## Regression baseline model Task 4
  metric - [R^2](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html)
- LinearRegression results ~ 0.53
- RandomForestRegressor results ~ 0.58
- GradientBoostingRegressor results ~ 0.51
+ - LinearRegression results ~ 0.53
+ - RandomForestRegressor results ~ 0.58
+ - GradientBoostingRegressor results ~ 0.51
  
  ### Conclusion:
 The baseline solution showed a weak result. To improve the quality of the model, can try the following steps
